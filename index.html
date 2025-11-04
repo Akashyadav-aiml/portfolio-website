@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Akash Yadav - AI & ML Student Portfolio">
+    <title>Akash Yadav | AI & ML Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">Akash<span>.dev</span></a>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particleCanvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span class="highlight">Akash Yadav</span></h1>
+            <p class="hero-subtitle">Artificial Intelligence & Machine Learning Student</p>
+            <p class="hero-description">Passionate about creating smart systems and data-driven applications</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="https://drive.google.com/file/d/1qzuAlxkT7LvXOSkWxzr5VapYt-clusKG/view" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                    <i class="fas fa-file-alt"></i> View CV
+                </a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="social-links">
+                <a href="mailto:akashyadav.aiml@gmail.com" target="_blank" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://linkedin.com/in/akash-yadav-89216a268" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Akashyadav-aiml" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="scroll-down">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Aspiring AI & ML Engineer</h3>
+                    <p>I'm currently pursuing a <strong>Bachelor's Degree in Computer Science Specialization AIML </strong></p>
+                    <p>I'm passionate about leveraging artificial intelligence and machine learning to solve real-world problems. My experience spans from building voice-controlled AI assistants to working with large language models and creating automation solutions.</p>
+                    <p>Looking for opportunities to apply my skills in machine learning, data analysis, and software development to gain practical experience and contribute to innovative projects.</p>
+                    <a href="https://drive.google.com/file/d/1qzuAlxkT7LvXOSkWxzr5VapYt-clusKG/view" class="btn btn-primary cv-btn" target="_blank" rel="noopener noreferrer">
+                        <i class="fas fa-file-pdf"></i> View CV
+                    </a>
+                    <div class="contact-info">
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91-6306612532</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>akashyadav.aiml@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Mumbai, India</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <div class="cube-container">
+                            <div class="cube">
+                                <div class="cube-face front">
+                                    <i class="fas fa-brain"></i>
+                                    <span>AI & ML</span>
+                                </div>
+                                <div class="cube-face back">
+                                    <i class="fas fa-code"></i>
+                                    <span>Developer</span>
+                                </div>
+                                <div class="cube-face right">
+                                    <i class="fas fa-robot"></i>
+                                    <span>Gen AI</span>
+                                </div>
+                                <div class="cube-face left">
+                                    <i class="fas fa-graduation-cap"></i>
+                                    <span>Student</span>
+                                </div>
+                                <div class="cube-face top">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Innovator</span>
+                                </div>
+                                <div class="cube-face bottom">
+                                    <i class="fas fa-puzzle-piece"></i>
+                                    <span>Problem Solver</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="🐍">Python</span>
+                            <span class="tag" data-icon="☕">JavaScript</span>
+                            <span class="tag" data-icon="☕">Java</span>
+                            <span class="tag" data-icon="©️">C</span>
+                            <span class="tag" data-icon="➕">C++</span>
+                            <span class="tag" data-icon="🗄️">SQL</span>
+                            <span class="tag" data-icon="🌐">HTML</span>
+                            <span class="tag" data-icon="🎨">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <h3>Technical Skills</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="🧩">Problem-Solving</span>
+                            <span class="tag" data-icon="🔄">Data Preprocessing</span>
+                            <span class="tag" data-icon="🤖">Machine Learning</span>
+                            <span class="tag" data-icon="💻">Computer Fundamentals</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generative AI -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>Generative AI</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="✍️">Prompt Engineering</span>
+                            <span class="tag" data-icon="🧠">LLMs</span>
+                            <span class="tag" data-icon="🤖">OpenAI API</span>
+                            <span class="tag" data-icon="🔄">Transformers</span>
+                            <span class="tag" data-icon="🎯">Agentic AI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI & ML Libraries -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>AI & ML Libraries</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="📊">NumPy</span>
+                            <span class="tag" data-icon="🐼">Pandas</span>
+                            <span class="tag" data-icon="📈">Matplotlib</span>
+                            <span class="tag" data-icon="🎨">Seaborn</span>
+                            <span class="tag" data-icon="🔬">Scikit-learn</span>
+                            <span class="tag" data-icon="🧮">TensorFlow</span>
+                            <span class="tag" data-icon="👁️">OpenCV</span>
+                            <span class="tag" data-icon="📓">Jupyter Notebooks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Databases</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="🗃️">MySQL</span>
+                            <span class="tag" data-icon="🍃">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Version Control -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <h3>Version Control</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="🔀">Git</span>
+                            <span class="tag" data-icon="🐙">GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Technologies -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Tools & Technologies</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="💻">VS Code</span>
+                            <span class="tag" data-icon="🐍">PyCharm</span>
+                            <span class="tag" data-icon="📊">Power BI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Concepts -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <h3>Core Concepts</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="📚">Deep Learning</span>
+                            <span class="tag" data-icon="📊">Data Visualization</span>
+                            <span class="tag" data-icon="🎯">Model Fine-Tuning</span>
+                            <span class="tag" data-icon="🏗️">OOP</span>
+                            <span class="tag" data-icon="🌳">DSA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <div class="skill-header" onclick="toggleSkillCategory(this)">
+                        <div class="skill-header-content">
+                            <div class="skill-icon-3d">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="toggle-arrow">
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                    </div>
+                    <div class="skill-content active">
+                        <div class="skill-tags">
+                            <span class="tag" data-icon="🤝">Teamwork</span>
+                            <span class="tag" data-icon="💬">Communication</span>
+                            <span class="tag" data-icon="🧠">Critical Thinking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Altair Data Science Internship</h3>
+                            <span class="timeline-date">Jan 2025 – Mar 2025</span>
+                        </div>
+                        <p class="timeline-org">AICTE • Remote</p>
+                        <ul class="timeline-description">
+                            <li>Applied data preprocessing, visualization, and predictive analytics techniques</li>
+                            <li>Strengthened analytical and problem-solving skills through project-based learning</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Google AI & ML Internship</h3>
+                            <span class="timeline-date">Oct 2024 – Dec 2024</span>
+                        </div>
+                        <p class="timeline-org">AICTE • Remote</p>
+                        <ul class="timeline-description">
+                            <li>Worked on AI/ML models and supervised learning with real-world datasets</li>
+                            <li>Improved model accuracy through data preprocessing and feature engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-globe project-icon"></i>
+                        <h3>Personal Portfolio Website</h3>
+                    </div>
+                    <p class="project-description">
+                        Developed a responsive portfolio website to showcase projects, achievements, and skills using modern web technologies.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="#" class="project-link">Visit Website <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-robot project-icon"></i>
+                        <h3>Jarvis AI Assistant</h3>
+                    </div>
+                    <p class="project-description">
+                        Built a voice-controlled AI assistant to automate tasks like web search and app launching using Python.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Speech Recognition</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <a href="https://github.com/Akashyadav-aiml" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-mobile-alt project-icon"></i>
+                        <h3>WhatsApp Restaurant Bot</h3>
+                    </div>
+                    <p class="project-description">
+                        Created an automated restaurant management bot integrated with Google Sheets for real-time updates.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Google Sheets API</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <a href="https://github.com/Akashyadav-aiml" class="project-link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Freelancing Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Freelancing Services</h2>
+            <p class="services-subtitle">Looking to bring your digital vision to life? I offer professional web development and AI/ML solutions tailored to your needs.</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Website Development</h3>
+                    <p>Custom, responsive websites built with modern technologies. From landing pages to full-stack applications.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive Design</li>
+                        <li><i class="fas fa-check"></i> Modern UI/UX</li>
+                        <li><i class="fas fa-check"></i> Fast Loading</li>
+                        <li><i class="fas fa-check"></i> SEO Optimized</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span class="tech-badge">HTML/CSS</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">React</span>
+                        <span class="tech-badge">Next.js</span>
+                    </div>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI/ML Solutions</h3>
+                    <p>Integrate intelligent features into your applications. From chatbots to predictive analytics.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> AI Chatbots</li>
+                        <li><i class="fas fa-check"></i> Data Analysis</li>
+                        <li><i class="fas fa-check"></i> ML Models</li>
+                        <li><i class="fas fa-check"></i> API Integration</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">TensorFlow</span>
+                        <span class="tech-badge">OpenAI</span>
+                        <span class="tech-badge">LLMs</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Automation Solutions</h3>
+                    <p>Streamline your business processes with custom automation tools and workflow integrations.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> WhatsApp Bots</li>
+                        <li><i class="fas fa-check"></i> Task Automation</li>
+                        <li><i class="fas fa-check"></i> API Integration</li>
+                        <li><i class="fas fa-check"></i> Data Scraping</li>
+                    </ul>
+                    <div class="service-tech">
+                        <span class="tech-badge">Python</span>
+                        <span class="tech-badge">n8n</span>
+                        <span class="tech-badge">APIs</span>
+                        <span class="tech-badge">Selenium</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="why-choose-me">
+                <h3><i class="fas fa-star"></i> Why Choose Me?</h3>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <i class="fas fa-clock"></i>
+                        <h4>Quick Turnaround</h4>
+                        <p>Fast delivery without compromising quality</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-comments"></i>
+                        <h4>Clear Communication</h4>
+                        <p>Regular updates and responsive support</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <h4>Affordable Rates</h4>
+                        <p>Competitive pricing for students & startups</p>
+                    </div>
+                    <div class="benefit-item">
+                        <i class="fas fa-code"></i>
+                        <h4>Clean Code</h4>
+                        <p>Well-documented and maintainable code</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <h3>Ready to Start Your Project?</h3>
+                <p>Let's discuss how I can help bring your ideas to life</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <i class="fas fa-paper-plane"></i> Get a Free Quote
+                    </a>
+                    <a href="https://wa.me/916306612532?text=Hi%20Akash,%20I'm%20interested%20in%20your%20freelancing%20services" class="btn btn-secondary btn-large" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Robotic Process Automation</h4>
+                    <p class="cert-issuer">Coursera (2025)</p>
+                    <p class="cert-description">Mastered RPA fundamentals including workflow automation, bot development, and process optimization techniques for business efficiency.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Generative AI and ChatGPT</h4>
+                    <p class="cert-issuer">GeeksforGeeks (2025)</p>
+                    <p class="cert-description">Gained expertise in generative AI models, prompt engineering, and practical applications of ChatGPT for real-world problem solving.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>TensorFlow</h4>
+                    <p class="cert-issuer">GeeksforGeeks (2025)</p>
+                    <p class="cert-description">Developed proficiency in building and deploying deep learning models using TensorFlow framework for neural network applications.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Supervised Machine Learning</h4>
+                    <p class="cert-issuer">DeepLearning.AI & Stanford (2024)</p>
+                    <p class="cert-description">Completed comprehensive training in regression, classification algorithms, and model evaluation techniques through Stanford's renowned ML course.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Generative AI with LLMs</h4>
+                    <p class="cert-issuer">Coursera (2024)</p>
+                    <p class="cert-description">Learned to fine-tune and deploy large language models, understanding transformer architecture and advanced generative AI applications.</p>
+                </div>
+                <div class="cert-card">
+                    <i class="fas fa-certificate"></i>
+                    <h4>Python</h4>
+                    <p class="cert-issuer">HackerRank (2024)</p>
+                    <p class="cert-description">Demonstrated advanced Python programming skills including data structures, algorithms, and object-oriented programming through HackerRank assessments.</p>
+                </div>
+            </div>
+            <div class="achievements">
+                <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                <div class="achievement-item">
+                    <p><strong>Top 100</strong> out of 5275+ teams nationwide — Scaler National Coding League (May 2024)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Feel free to reach out for collaborations, opportunities, or just a friendly chat!</p>
+            <div class="contact-content">
+                <div class="contact-info-box">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <a href="mailto:akashyadav.aiml@gmail.com">akashyadav.aiml@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <a href="tel:+916306612532">+91-6306612532</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <a href="https://linkedin.com/in/akash-yadav-89216a268" target="_blank">Connect with me</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <div>
+                            <h4>GitHub</h4>
+                            <a href="https://github.com/Akashyadav-aiml" target="_blank">View my repositories</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-box">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Akash . All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
