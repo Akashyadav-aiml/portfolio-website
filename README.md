@@ -47,7 +47,7 @@ portfolio/
 
 Clone the repository:
 
-git clone https://github.com/your-username/portfolio.git
+git clone https://akashyadav-aiml.github.io/portfolio-website/
 
 
 Navigate into the project folder:
